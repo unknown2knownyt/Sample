@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Descendant Selector */
+.container>p {
+  color: red;
+}
+
+/* Child Selector */
+.container > span {
+  font-weight: bold;
+}
+
+/* Adjacent Sibling Selector */
+.container ~ div {
+  background-color: yellow;
+}
+
+/* General Sibling Selector */
+.container ~ ul {
+  list-style-type: square;
+}
+
+/* Attribute Selector */
+a[href="https://www.example.com"] {
+  text-decoration: none;
+}
+
+/* Pseudo-class Selector */
+input:focus {
+  border: 2px solid blue;
+}
+
+/* Pseudo-element Selector */
+p::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <p>This is a paragraph inside the container.</p>
+  <span>This is a span child of the container.</span>
+  <div>
+  <p>This is a paragraph inside the container.</p>
+  <span>This is a span child of the container.</span>
+
+  <p>This is a paragraph inside the container.</p>
+</div>
+
+
+<div>Adjacent Sibling Selector</div>
+
+<ul>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ul>
+
+<a href="https://www.example.com">Link with attribute selector</a>
+
+<input type="text" placeholder="Focus on me">
+
+<p>This is a paragraph with a pseudo-element.</p>
+</div>
+<div>Adjacent Sibling Selector</div>
+
+<ul>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ul>
+
+<a href="https://www.example.com">Link with attribute selector</a>
+
+<input type="text" placeholder="Focus on me">
+
+<p>This is a paragraph with a pseudo-element.</p>
+<div>Adjacent Sibling Selector</div>
+
+
+</body>
+</html>
