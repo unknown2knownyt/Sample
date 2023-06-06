@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Document</title>
+    <style>
+        .one .child1 .child2 p {
+            background-color: red;
+        }
+        .child2 p{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="first"> This is first timer: 12:31:32</h1>
+    <div class="one">
+        <div class="child1">
+            <div class="child2">
+                <p>John</p>
+            </div>
+        </div>
+    </div>
+    <div class="child2">
+        <p>John2</p>
+    </div>
+    <script>
+
+        function updateTime() {
+            var now = new Date();
+
+            var time = now.toLocaleTimeString();
+            document.getElementById('first').innerHTML= time;
+
+        }
+        setInterval(updateTime, 1000);
+        /* var name = "Javascript1";
+        console.log('Variable name is',name );
+        if(name === "Javascript")
+        alert(name);
+        document.write('Next line')
+        document.getElementById('first').innerHTML = "Changed header";
+        document.getElementById('first').style.color = "red";
+        document.getElementById('first').style.backgroundColor = "black";
+
+        var a = ["name1", "name2", "name3"];
+        a[0] = "changedName";
+        document.write(a[0])
+        document.write(a[1])
+        document.write(a[2]);
+        console.log(a[0])
+        console.log(a[1])
+        console.log(a[2]);
+
+        var address = {firstName: 'aa', 'lastName': 'bb', address1: 'add1', address2:"add2"};
+        console.log('address.firstName', address.firstName); */
+
+
+
+    </script>
+
+    
+</body>
+</html>
